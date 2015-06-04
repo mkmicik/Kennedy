@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#001F3D"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kennedy.view.Profile" >
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:shadowColor="#FFFFFF"
+        android:text="Magic Mike"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        
+        android:textColor="#33CCFF"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/auth_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/username"
+        android:text="DL6K1P0076DC75H699GF856DT"
+        android:textColor="#FFF"
+        android:fontFamily="courier"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"
+        android:onClick="changeHash"
+        android:background="@drawable/auth_code_button" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/auth_code"
+        android:gravity="center"
+        android:text="Medium Text"
+        android:textColor="#33CCFF"
+        android:fontFamily="sans-serif-thin"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
